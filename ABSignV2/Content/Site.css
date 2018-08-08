@@ -22,3 +22,7 @@ select,
 textarea {
     max-width: 280px;
 }
+.flashcard {
+    width: 250px;
+    height: 180px;
+}
