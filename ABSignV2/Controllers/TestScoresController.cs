@@ -14,6 +14,12 @@ namespace ABSignV2.Controllers
     {
         private AbSignV2Entities db = new AbSignV2Entities();
 
+        public ActionResult QuizView()
+        {
+            var testScores = db.TestScores.Include(t => t.Profile);
+            return View(testScores.ToList());
+        }
+
         // GET: TestScores
         public ActionResult Index()
         {
